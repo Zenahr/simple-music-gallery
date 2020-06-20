@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+:root {
+    --global-radius: 5px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #eee;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 12vh;
+    width: 25vw;
+}
+
+header {
+    font-size: 1em;
+    font-weight: 600;
+    color: #626262;
+    user-select: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flexy-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.track {
+    border-radius: var(--global-radius);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    background: #9575cd;
+    color: white;
+}
+
+.song-title {
+    border-radius: var(--global-radius);
+    background-color: rgba(0, 185, 31, 0.281);
+}
+
+.listen {
+    border-radius: var(--global-radius);
+    background-color: rgba(0, 237, 245, 0.26);
+}
+
+.download {
+    border-radius: var(--global-radius);
+    background-color: rgba(248, 0, 0, 0.342);
+}
+
+.flexy-item {
+    flex-grow: 1;
+    margin: 0 0;
+    padding: 23px 0;
+}
+
+.flexy-item+.flexy-item {
+    margin-left: 0%;
+}
