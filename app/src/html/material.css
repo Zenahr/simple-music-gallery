@@ -2,14 +2,23 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 :root {
     --global-radius: 0;
+    --body-bg-color: #3b3b3b;
+    --header-text-color: white;
+    --list-items-text-color: white;
+    --list-items-bg-color: #9575cd;
     --column-1-bg-color: rgba(0, 185, 31, 0.281);
     --column-2-bg-color: rgba(0, 237, 245, 0.26);
     --column-3-bg-color: rgba(248, 0, 0, 0.342);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
-    background: #eee;
+    background: var(--body-bg-color);
 }
 
 .container {
@@ -21,13 +30,8 @@ body {
 header {
     font-size: 1em;
     font-weight: 600;
-    color: #626262;
+    color: var(--header-text-color);
     user-select: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .flexy-container {
@@ -40,8 +44,8 @@ a {
 .track {
     border-radius: var(--global-radius);
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-    background: #9575cd;
-    color: white;
+    background: var(--list-items-bg-color);
+    color: var(--list-items-text-color);
 }
 
 .song-title {
